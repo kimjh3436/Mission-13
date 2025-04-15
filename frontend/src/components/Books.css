@@ -1,0 +1,31 @@
+/** additional styling that is used on top of boot strap */
+.hover-scale {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+transform: scale(1.05); /* Slightly increase size */
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.card-body {
+position: relative;
+}
+
+.card-body .btn {
+transition: background-color 0.3s ease;
+}
+
+.card-body .btn:hover {
+background-color: #0056b3; /* Darker shade on hover */
+}
+
+.card {
+    min-height: 300px; /* Ensures that the cards maintain a minimum height */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1; /* Makes sure the content expands to fill the available space */
+}
